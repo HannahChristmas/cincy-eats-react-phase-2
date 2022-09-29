@@ -1,0 +1,10 @@
+{
+    "restaurants": [
+        {"id": 1},
+        {"name": "Mid City"},
+        {"neighborhood": "CBD"},
+        {"cuisine": "Small Plates"},
+        {"instagram": "https://www.instagram.com/midcitycinti/?hl=en"},
+        {"menu": "https://www.midcitycinti.com/"}
+    ]
+}
