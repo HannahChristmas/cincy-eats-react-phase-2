@@ -1,13 +1,10 @@
 import React from "react";
 
-function SearchBar(){
-
-    
-
+function SearchBar({handleNeighborhoodFilter}){
     return (
         <div>
         <strong>Filter By: </strong>
-        <select>
+        <select onChange={handleNeighborhoodFilter}>
             <option value="Neighborhood">Neighborhood</option>
             <option value="CBD">CBD</option>
             <option value="Covington, KY">Covington, KY</option>
