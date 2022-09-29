@@ -26,7 +26,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/restaurants">
-          <RestaurantList allRestaurants={allRestaurants}/>
+          <RestaurantList allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
         </Route>
         <Route path="/add">
           <NewRestaurantForm />
