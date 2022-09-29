@@ -1,6 +1,7 @@
-import React from "react";
+import React, {useState} from "react";
 
 function RestaurantCard({restaurant}){
+const [isVisited, setIsVisited] = useState(true)
 
     return(
         <div>
@@ -10,6 +11,11 @@ function RestaurantCard({restaurant}){
             <ul><a href={restaurant.instagram}>Instagram</a></ul>
             <ul><a href={restaurant.website}>Website</a></ul>
             <ul><a href={restaurant.menu}>Menu</a></ul>
+            {isVisited ? (
+            <button onClick={() => setIsVisited(!isVisited)}>It's still on the list!</button>
+            ) : (
+            <button onClick={() => setIsVisited(!isVisited)}>We've been to this spot!</button>    
+            )}
         </div>
     )
 }

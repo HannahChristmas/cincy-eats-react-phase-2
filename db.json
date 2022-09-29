@@ -2,21 +2,23 @@
     "restaurants": [
         {
             "id": 1,
-            "name": "Mid City",
+            "name": "Mid City Visited",
             "neighborhood": "CBD",
             "cuisine": "Small Plates",
             "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
             "website": "https://www.midcitycinti.com/",
-            "menu": "https://www.midcitycinti.com/menu"
+            "menu": "https://www.midcitycinti.com/menu",
+            "visited": "true"
         },
         {
             "id": 1,
-            "name": "Mid City",
+            "name": "Mid City Unvisited",
             "neighborhood": "CBD",
             "cuisine": "Small Plates",
             "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
             "website": "https://www.midcitycinti.com/",
-            "menu": "https://www.midcitycinti.com/menu"
+            "menu": "https://www.midcitycinti.com/menu",
+            "visited": "false"
         },
         {
             "id": 1,
