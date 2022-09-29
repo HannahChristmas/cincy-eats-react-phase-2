@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // import './App.css';
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar"
 import Home from "./Home";
@@ -9,6 +9,15 @@ import NewRestaurantForm from "./NewRestaurantForm";
 
 
 function App() {
+  const [allRestaurants, setAllRestaurants] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3004/restaurants')
+      .then((response) => response.json())
+      .then((data) => setAllRestaurants(data));
+  }, [])
+  
+
   return (
     <div>
       <NavBar />
@@ -17,7 +26,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/restaurants">
-          <RestaurantList />
+          <RestaurantList allRestaurants={allRestaurants}/>
         </Route>
         <Route path="/add">
           <NewRestaurantForm />

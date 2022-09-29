@@ -4,7 +4,7 @@ function Home() {
 
     return<div>
         <h1>About Us</h1>
-        <p>Here's some info about us</p>
+        <p>Love Cincinnati? So do we. Check out all of our favorite restaurants, and add to the list yourself.</p>
     </div>
 }
 
