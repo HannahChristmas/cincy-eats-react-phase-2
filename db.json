@@ -1,7 +1,35 @@
 {
   "restaurants": [
     {
-      "id": 1,
+        "id": 1,
+        "name": "Cafe Mochiko",
+        "neighborhood": "East Walnut Hills",
+        "cuisine": "Japanese",
+        "instagram": "https://www.instagram.com/mochikocincy/",
+        "website": "https://www.cafemochiko.com/",
+        "menu": "https://www.cafemochiko.com/menus",
+        "visited": false
+      },
+      {
+        "id": 2,
+        "name": "Coppin's Restaurant & Bar",
+        "neighborhood": "Covington, KY", 
+        "cuisine": "American",
+        "instagram": "https://www.instagram.com/coppinsrestaurant/",
+        "website": "http://hotelcovington.com/dining/coppins/",
+        "menu": "https://hotelcovington.com/wp-content/uploads/2022/09/Fall-Dinner-9.25.pdf"
+      },
+      {
+        "id": 3,
+        "name": "Hi Mark",
+        "neighborhood": "East End",
+        "cuisine": "American",
+        "instagram": "https://www.instagram.com/thehimark/",
+        "website": "https://www.thehimark.com/",
+        "menu": "https://www.thehimark.com/pdfs/current-menu-hi-mark.pdf"
+      },
+    {
+      "id": 4,
       "name": "Mid City",
       "neighborhood": "CBD",
       "cuisine": "Small Plates",
@@ -11,45 +39,17 @@
       "visited": true
     },
     {
-      "id": 1,
-      "name": "Cafe Mochiko",
-      "neighborhood": "East Walnut Hills",
-      "cuisine": "Japanese",
-      "instagram": "https://www.instagram.com/mochikocincy/",
-      "website": "https://www.cafemochiko.com/",
-      "menu": "https://www.cafemochiko.com/menus",
-      "visited": false
+      "id": 5,
+      "name": "Truva",
+      "neighborhood": "Montgomery",
+      "cuisine": "Mediterranean",
+      "instagram": "https://www.truvaturkishkitchen.com/",
+      "website": "https://www.truvaturkishkitchen.com/",
+      "menu": "https://www.truvaturkishkitchen.com/our-menu/"
     },
     {
-      "id": 1,
-      "name": "Water Bottle",
-      "neighborhood": "CBD",
-      "cuisine": "Small Plates",
-      "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
-      "website": "https://www.midcitycinti.com/",
-      "menu": "https://www.midcitycinti.com/menu"
-    },
-    {
-      "id": 1,
-      "name": "Notebook",
-      "neighborhood": "CBD",
-      "cuisine": "Small Plates",
-      "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
-      "website": "https://www.midcitycinti.com/",
-      "menu": "https://www.midcitycinti.com/menu"
-    },
-    {
-      "id": 1,
-      "name": "Mid City",
-      "neighborhood": "CBD",
-      "cuisine": "Small Plates",
-      "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
-      "website": "https://www.midcitycinti.com/",
-      "menu": "https://www.midcitycinti.com/menu"
-    },
-    {
-      "id": 1,
-      "name": "Mid City",
+      "id": 6,
+      "name": "Paper",
       "neighborhood": "CBD",
       "cuisine": "Small Plates",
       "instagram": "https://www.instagram.com/midcitycinti/?hl=en",

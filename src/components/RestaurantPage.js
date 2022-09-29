@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import RestaurantList from "./RestaurantList";
 import NewRestaurantForm from "./NewRestaurantForm";
+import SearchBar from "./SearchBar";
 
 
 function RestaurantPage() {
@@ -18,6 +19,8 @@ function RestaurantPage() {
 
   return (
     <main>
+       <h1>All of Our Restaurants</h1>
+      <SearchBar />  
       <RestaurantList allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
       <NewRestaurantForm />
       {/* <Search />

@@ -5,14 +5,13 @@ function RestaurantList({allRestaurants, setAllRestaurants}){
 
     const restaurantsOnInitialRender = allRestaurants.map(restaurant => {
         return (
-            <RestaurantCard restaurant={restaurant} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
+            <RestaurantCard key={restaurant.id} restaurant={restaurant} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
         )
     })
 
     return(
 
         <div>
-        <h1>All of Our Restaurants</h1>
         {restaurantsOnInitialRender}
         </div>
     )

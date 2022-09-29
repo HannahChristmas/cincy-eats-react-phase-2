@@ -25,9 +25,6 @@ function App() {
           <NewRestaurantForm />
         </Route>
       </Switch>
-      {/* <header>
-        <h1>Welcome</h1>
-      </header> */}
     </div>
   );
 }
