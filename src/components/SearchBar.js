@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBar({handleNeighborhoodFilter}){
+function SearchBar({handleNeighborhoodFilter, handleCuisineFilter}){
     return (
         <div>
         <strong>Filter By: </strong>
@@ -12,8 +12,8 @@ function SearchBar({handleNeighborhoodFilter}){
             <option value="East Walnut Hills">East Walnut Hills</option>
             <option value="Montgomery">Montgomery</option>
         </select>
-        <select>
-            <option value="Cusine">Cuisine</option>
+        <select onChange={handleCuisineFilter}>
+            <option value="Cuisine">Cuisine</option>
             <option value="American">American</option>
             <option value="Japanese">Japanese</option>
             <option value="Mediterranean">Mediterranean</option>

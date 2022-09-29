@@ -11,15 +11,16 @@ function handleVisitedButtonClick(){
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({visited: isVisited}),
-      })
+        body: JSON.stringify({visited: !isVisited}),
+        })
         .then((response) => response.json())
         .then((updatedRestaurant) => {
+            
+            // setIsVisited(!isVisited)  
             console.log(updatedRestaurant)
-          const patchedRestaurant = allRestaurants.map(unchangedRestaurantFromMap => unchangedRestaurantFromMap.id === restaurant.id ? updatedRestaurant : unchangedRestaurantFromMap);
-          
-          setAllRestaurants([...allRestaurants, patchedRestaurant])
-          console.log ("After set state:", allRestaurants)
+          const patchedRestaurants = allRestaurants.map(unchangedRestaurantFromMap => unchangedRestaurantFromMap.id === restaurant.id ? updatedRestaurant : unchangedRestaurantFromMap);
+          setAllRestaurants(patchedRestaurants)
+          console.log ("After set state:", patchedRestaurants)
       })
 }
 
@@ -32,9 +33,9 @@ function handleVisitedButtonClick(){
             <ul><a href={restaurant.website}>Website</a></ul>
             <ul><a href={restaurant.menu}>Menu</a></ul>
             {isVisited ? (
-            <button onClick={handleVisitedButtonClick}>It's still on the list!</button>
+            <button onClick={handleVisitedButtonClick}>True: We've been to this spot!</button>
             ) : (
-            <button onClick={handleVisitedButtonClick}>We've been to this spot!</button>    
+            <button onClick={handleVisitedButtonClick}>False: It's still on the list!</button>    
             )}
         </div>
     )

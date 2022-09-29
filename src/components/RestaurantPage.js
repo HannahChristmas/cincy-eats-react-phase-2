@@ -8,7 +8,8 @@ import SearchBar from "./SearchBar";
 
 function RestaurantPage() {
    const [allRestaurants, setAllRestaurants] = useState([])
-   const [filterNeighborhood, setFilterNeighborhood] = useState('')
+   const [filterNeighborhood, setFilterNeighborhood] = useState("Neighborhood")
+   const [filterCuisine, setFilterCuisine] = useState("Cuisine")
 
   useEffect(() => {
     fetch('http://localhost:3004/restaurants')
@@ -20,11 +21,15 @@ function RestaurantPage() {
     setFilterNeighborhood(e.target.value)
   }
 
+  function handleCuisineFilter(e){
+    setFilterCuisine(e.target.value)
+  }
+
   return (
     <main>
        <h1>All of Our Restaurants</h1>
-      <SearchBar handleNeighborhoodFilter={handleNeighborhoodFilter}/>  
-      <RestaurantList filterNeighborhood={filterNeighborhood} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
+      <SearchBar handleNeighborhoodFilter={handleNeighborhoodFilter} handleCuisineFilter={handleCuisineFilter}/>  
+      <RestaurantList filterNeighborhood={filterNeighborhood} filterCuisine={filterCuisine} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
       
       {/* <Search />
       <Filter /> */}

@@ -1,33 +1,35 @@
 {
   "restaurants": [
     {
-        "id": 1,
-        "name": "Cafe Mochiko",
-        "neighborhood": "East Walnut Hills",
-        "cuisine": "Japanese",
-        "instagram": "https://www.instagram.com/mochikocincy/",
-        "website": "https://www.cafemochiko.com/",
-        "menu": "https://www.cafemochiko.com/menus",
-        "visited": false
-      },
-      {
-        "id": 2,
-        "name": "Coppin's Restaurant & Bar",
-        "neighborhood": "Covington, KY", 
-        "cuisine": "American",
-        "instagram": "https://www.instagram.com/coppinsrestaurant/",
-        "website": "http://hotelcovington.com/dining/coppins/",
-        "menu": "https://hotelcovington.com/wp-content/uploads/2022/09/Fall-Dinner-9.25.pdf"
-      },
-      {
-        "id": 3,
-        "name": "Hi Mark",
-        "neighborhood": "East End",
-        "cuisine": "American",
-        "instagram": "https://www.instagram.com/thehimark/",
-        "website": "https://www.thehimark.com/",
-        "menu": "https://www.thehimark.com/pdfs/current-menu-hi-mark.pdf"
-      },
+      "id": 1,
+      "name": "Cafe Mochiko",
+      "neighborhood": "East Walnut Hills",
+      "cuisine": "Japanese",
+      "instagram": "https://www.instagram.com/mochikocincy/",
+      "website": "https://www.cafemochiko.com/",
+      "menu": "https://www.cafemochiko.com/menus",
+      "visited": true
+    },
+    {
+      "id": 2,
+      "name": "Coppin's Restaurant & Bar",
+      "neighborhood": "Covington, KY",
+      "cuisine": "American",
+      "instagram": "https://www.instagram.com/coppinsrestaurant/",
+      "website": "http://hotelcovington.com/dining/coppins/",
+      "menu": "https://hotelcovington.com/wp-content/uploads/2022/09/Fall-Dinner-9.25.pdf",
+      "visited": false
+    },
+    {
+      "id": 3,
+      "name": "Hi Mark",
+      "neighborhood": "East End",
+      "cuisine": "American",
+      "instagram": "https://www.instagram.com/thehimark/",
+      "website": "https://www.thehimark.com/",
+      "menu": "https://www.thehimark.com/pdfs/current-menu-hi-mark.pdf",
+      "visited": false
+    },
     {
       "id": 4,
       "name": "Mid City",
@@ -45,7 +47,8 @@
       "cuisine": "Mediterranean",
       "instagram": "https://www.truvaturkishkitchen.com/",
       "website": "https://www.truvaturkishkitchen.com/",
-      "menu": "https://www.truvaturkishkitchen.com/our-menu/"
+      "menu": "https://www.truvaturkishkitchen.com/our-menu/",
+      "visited": true
     },
     {
       "id": 6,
@@ -54,7 +57,8 @@
       "cuisine": "Small Plates",
       "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
       "website": "https://www.midcitycinti.com/",
-      "menu": "https://www.midcitycinti.com/menu"
+      "menu": "https://www.midcitycinti.com/menu",
+      "visited": true
     }
   ]
 }
