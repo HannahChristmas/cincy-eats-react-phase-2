@@ -2,7 +2,7 @@
   "restaurants": [
     {
       "id": 1,
-      "name": "Mid City Visited",
+      "name": "Mid City",
       "neighborhood": "CBD",
       "cuisine": "Small Plates",
       "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
@@ -12,17 +12,17 @@
     },
     {
       "id": 1,
-      "name": "Mid City Unvisited",
-      "neighborhood": "CBD",
-      "cuisine": "Small Plates",
-      "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
-      "website": "https://www.midcitycinti.com/",
-      "menu": "https://www.midcitycinti.com/menu",
+      "name": "Cafe Mochiko",
+      "neighborhood": "East Walnut Hills",
+      "cuisine": "Japanese",
+      "instagram": "https://www.instagram.com/mochikocincy/",
+      "website": "https://www.cafemochiko.com/",
+      "menu": "https://www.cafemochiko.com/menus",
       "visited": false
     },
     {
       "id": 1,
-      "name": "Mid City",
+      "name": "Water Bottle",
       "neighborhood": "CBD",
       "cuisine": "Small Plates",
       "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
@@ -31,7 +31,7 @@
     },
     {
       "id": 1,
-      "name": "Mid City",
+      "name": "Notebook",
       "neighborhood": "CBD",
       "cuisine": "Small Plates",
       "instagram": "https://www.instagram.com/midcitycinti/?hl=en",

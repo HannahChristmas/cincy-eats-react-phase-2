@@ -11,7 +11,6 @@ function RestaurantList({allRestaurants, setAllRestaurants}){
 
     return(
 
-
         <div>
         <h1>All of Our Restaurants</h1>
         {restaurantsOnInitialRender}

@@ -3,7 +3,7 @@ import React, {useState} from "react";
 function RestaurantCard({restaurant, allRestaurants, setAllRestaurants}){
 const [isVisited, setIsVisited] = useState(restaurant.visited)
 
-
+// console.log("On render:", allRestaurants)
 function handleVisitedButtonClick(){
     setIsVisited(!isVisited)
     fetch(`http://localhost:3004/restaurants/${restaurant.id}`, {
@@ -15,11 +15,12 @@ function handleVisitedButtonClick(){
       })
         .then((response) => response.json())
         .then((updatedRestaurant) => {
-          const patchedRestaurants = allRestaurants.map(restaurantFromMap => restaurantFromMap.id === restaurant.id ? updatedRestaurant : restaurantFromMap);
-          setAllRestaurants(patchedRestaurants)
+            console.log(updatedRestaurant)
+          const patchedRestaurant = allRestaurants.map(unchangedRestaurantFromMap => unchangedRestaurantFromMap.id === restaurant.id ? updatedRestaurant : unchangedRestaurantFromMap);
+          
+          setAllRestaurants([...allRestaurants, patchedRestaurant])
+          console.log ("After set state:", allRestaurants)
       })
-
-
 }
 
     return(
