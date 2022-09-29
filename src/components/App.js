@@ -6,17 +6,10 @@ import NavBar from "./NavBar"
 import Home from "./Home";
 import RestaurantList from "./RestaurantList";
 import NewRestaurantForm from "./NewRestaurantForm";
+import RestaurantPage from "./RestaurantPage"
 
 
 function App() {
-  const [allRestaurants, setAllRestaurants] = useState([])
-
-  useEffect(() => {
-    fetch('http://localhost:3004/restaurants')
-      .then((response) => response.json())
-      .then((data) => setAllRestaurants(data));
-  }, [])
-  
 
   return (
     <div>
@@ -26,7 +19,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/restaurants">
-          <RestaurantList allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
+          <RestaurantPage />
         </Route>
         <Route path="/add">
           <NewRestaurantForm />
