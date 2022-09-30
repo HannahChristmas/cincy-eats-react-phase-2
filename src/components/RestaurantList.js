@@ -27,4 +27,6 @@ function RestaurantList({allRestaurants, setAllRestaurants, filterNeighborhood, 
     )
 }
 
+
+
 export default RestaurantList;

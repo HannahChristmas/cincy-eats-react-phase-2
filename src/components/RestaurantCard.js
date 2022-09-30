@@ -32,10 +32,11 @@ function handleVisitedButtonClick(){
             <ul><a href={restaurant.instagram}>Instagram</a></ul>
             <ul><a href={restaurant.website}>Website</a></ul>
             <ul><a href={restaurant.menu}>Menu</a></ul>
+            <strong>Have we been there? </strong>
             {isVisited ? (
-            <button onClick={handleVisitedButtonClick}>True: We've been to this spot!</button>
+            <button onClick={handleVisitedButtonClick}>We've been to this spot!</button>
             ) : (
-            <button onClick={handleVisitedButtonClick}>False: It's still on the list!</button>    
+            <button onClick={handleVisitedButtonClick}>It's still on the list!</button>    
             )}
         </div>
     )
