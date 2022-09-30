@@ -69,6 +69,16 @@
       "menu": "menu.com",
       "visited": "false",
       "id": 7
+    },
+    {
+      "name": "Another Resto",
+      "neighborhood": "East Walnut Hills",
+      "cuisine": "Japanese",
+      "instagram": "insty boy",
+      "website": "webby boy",
+      "menu": "menny boy ",
+      "visited": "true",
+      "id": 8
     }
   ]
 }

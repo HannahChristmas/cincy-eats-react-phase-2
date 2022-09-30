@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, sortRestaurants, sortBy}){
+function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisitedFilter}){
     return (
         <div>
         <strong>Filter By: </strong>
@@ -18,28 +18,12 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, sortRestauran
             <option value="Japanese">Japanese</option>
             <option value="Mediterranean">Mediterranean</option>
             <option value="Small Plates">Small Plates</option>
+        </select>
+        <select onChange={handleVisitedFilter}>
+            <option value="Have you visited?">Have you visited?</option>
+            <option value="Yes!">Yes!</option>
+            <option value="It's still on the list!">It's still on the list!</option>
         </select><br></br><br></br>
-        <strong>Sort by:</strong>
-        <label>
-            <input
-                type="radio"
-                value="Alphabetically"
-                name="sort"
-                checked={sortBy === "Alphabetically"}
-                onChange={sortRestaurants}
-            />
-            Visited
-        </label>
-        <label>
-            <input
-                type="radio"
-                value="It's Still on the List!"
-                name="sort"
-                // checked=""
-                onChange={sortRestaurants}
-            />
-            It's Still on the List!
-        </label>
         </div>
     )
 }

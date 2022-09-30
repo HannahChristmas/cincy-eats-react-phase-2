@@ -7,21 +7,9 @@ import SearchBar from "./SearchBar";
 
 
 function RestaurantPage({allRestaurants, setAllRestaurants}) {
-//    const [allRestaurants, setAllRestaurants] = useState([])
    const [filterNeighborhood, setFilterNeighborhood] = useState("Neighborhood")
    const [filterCuisine, setFilterCuisine] = useState("Cuisine")
-   const [sortBy, setSortBy] = useState('')
-
-
-//   useEffect(() => {
-//     fetch('http://localhost:3004/restaurants')
-//       .then((response) => response.json())
-//       .then((data) => setAllRestaurants(data));
-//   }, [])
-
-//   function newRestaurantFormSubmitClick(newRestaurant){
-//     setAllRestaurants([...allRestaurants, newRestaurant])
-//   }
+   const [filterVisited, setFilterVisited] = useState("Have you visited?")
 
 
   function handleNeighborhoodFilter(e){
@@ -32,16 +20,15 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
     setFilterCuisine(e.target.value)
   }
 
-  function sortRestaurants (e){
-    setSortBy(e.target.value)
-    console.log(e.target.value)
+  function handleVisitedFilter(e){
+    setFilterVisited(e.target.value)
   }
 
   return (
     <main>
        <h1>All of Our Restaurants</h1>
-      <SearchBar sortBy={sortBy} sortRestaurants={sortRestaurants} handleNeighborhoodFilter={handleNeighborhoodFilter} handleCuisineFilter={handleCuisineFilter}/>  
-      <RestaurantList filterNeighborhood={filterNeighborhood} filterCuisine={filterCuisine} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
+      <SearchBar handleNeighborhoodFilter={handleNeighborhoodFilter} handleCuisineFilter={handleCuisineFilter} handleVisitedFilter={handleVisitedFilter}/>  
+      <RestaurantList filterNeighborhood={filterNeighborhood} filterCuisine={filterCuisine} filterVisited={filterVisited} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
       
       {/* <Search />
       <Filter /> */}

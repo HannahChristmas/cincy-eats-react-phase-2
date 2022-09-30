@@ -1,7 +1,7 @@
 import React from "react";
 import RestaurantCard from "./RestaurantCard";
 
-function RestaurantList({allRestaurants, setAllRestaurants, filterNeighborhood, filterCuisine}){
+function RestaurantList({allRestaurants, setAllRestaurants, filterNeighborhood, filterCuisine, filterVisited}){
 
     const filteredByNeighborhood = allRestaurants.filter(restaurant => {
         if((filterNeighborhood === "Neighborhood") || (filterNeighborhood === restaurant.neighborhood)) return true 

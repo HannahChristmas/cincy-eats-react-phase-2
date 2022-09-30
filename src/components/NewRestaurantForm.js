@@ -20,7 +20,6 @@ function handleFormSubmit(e){
         "menu": menu,
         "visited": visited
       }
-      newRestaurantFormSubmitClick(newRestaurantFromForm)
       console.log("New Restaurant", newRestaurantFromForm)
       fetch('http://localhost:3004/restaurants', {
         method: 'POST',
@@ -28,6 +27,10 @@ function handleFormSubmit(e){
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(newRestaurantFromForm),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+            newRestaurantFormSubmitClick(data);
       })
 }
     return(
