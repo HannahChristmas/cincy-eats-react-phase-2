@@ -1,19 +1,42 @@
 import React, {useState} from "react";
 
-function NewRestaurantForm(){
+function NewRestaurantForm({newRestaurantFormSubmitClick}){
+const [name, setName] = useState('')
+const [neighborhood, setNeighborhood] = useState('Select Neighborhood')
+const [cuisine, setCuisine] = useState('Select Cusine')
+const [website, setWebsite] = useState('')
+const [menu, setMenu] = useState('')
+const [instagram, setInstagram] = useState('')
+const [visited, setVisited] = useState('')
+
+function handleFormSubmit(e){
+    e.preventDefault()
+    const newRestaurantFromForm =   {
+        "name": name,
+        "neighborhood": neighborhood,
+        "cuisine": cuisine,
+        "instagram": instagram,
+        "website": website,
+        "menu": menu,
+        "visited": visited
+      }
+      newRestaurantFormSubmitClick(newRestaurantFromForm)
+      console.log("New Restaurant", newRestaurantFromForm)
+}
     return(
         <div>
         <h1>New Restaurant Form</h1>
         <h3>Add a new restaurant to the list!</h3>
-            <form className="add-restaurant">
+            <form className="add-restaurant" onSubmit={handleFormSubmit}>
             <input
             type="text"
             name="name"
             placeholder="Restaurant name"
             className="input-text"
+            onChange={(e) => setName(e.target.value)}
             />
             <br />
-            <select>
+            <select onChange={(e) => setNeighborhood(e.target.value)}>
             < option value="Select Neighborhood">Select Neighborhood</option>
             < option value="CBD">CBD</option>
             < option value="Covington, KY">Covington, KY</option>
@@ -23,7 +46,7 @@ function NewRestaurantForm(){
             < option value="Other">Other</option>
             </select>
             <br />
-            <select>
+            <select onChange={(e) => setCuisine(e.target.value)}>
             < option value="Select Cusine">Select Cusine</option>
             < option value="American">American</option>
             < option value="Japanese">Japanese</option>
@@ -37,6 +60,7 @@ function NewRestaurantForm(){
             name="name"
             placeholder="Website"
             className="input-text"
+            onChange={(e) => setWebsite(e.target.value)}
             />
             <br />
             <input
@@ -44,6 +68,7 @@ function NewRestaurantForm(){
             name="name"
             placeholder="Menu"
             className="input-text"
+            onChange={(e) => setMenu(e.target.value)}
             />
             <br />
             <input
@@ -51,12 +76,13 @@ function NewRestaurantForm(){
             name="name"
             placeholder="Instagram"
             className="input-text"
+            onChange={(e) => setInstagram(e.target.value)}
             />
             <br />
-            <select>
+            <select onChange={(e) => setVisited(e.target.value)}>
             < option value="Have you visited?">Have you visited?</option>
-            < option value="Yes">Yes</option>
-            < option value="Not yet">Not yet</option>
+            < option value="true">Yes</option>
+            < option value="false">Not yet</option>
             </select>
             <br /><br />
             <input

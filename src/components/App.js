@@ -10,6 +10,17 @@ import RestaurantPage from "./RestaurantPage"
 
 
 function App() {
+  const [allRestaurants, setAllRestaurants] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:3004/restaurants')
+      .then((response) => response.json())
+      .then((data) => setAllRestaurants(data));
+  }, [])
+
+  function newRestaurantFormSubmitClick(newRestaurant){
+    setAllRestaurants([...allRestaurants, newRestaurant])
+  }
 
   return (
     <div>
@@ -19,10 +30,10 @@ function App() {
           <Home />
         </Route>
         <Route path="/restaurants">
-          <RestaurantPage />
+          <RestaurantPage allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
         </Route>
         <Route path="/add">
-          <NewRestaurantForm />
+          <NewRestaurantForm newRestaurantFormSubmitClick={newRestaurantFormSubmitClick}/>
         </Route>
       </Switch>
     </div>

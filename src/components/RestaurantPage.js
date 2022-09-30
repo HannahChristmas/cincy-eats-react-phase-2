@@ -6,18 +6,22 @@ import NewRestaurantForm from "./NewRestaurantForm";
 import SearchBar from "./SearchBar";
 
 
-function RestaurantPage() {
-   const [allRestaurants, setAllRestaurants] = useState([])
+function RestaurantPage({allRestaurants, setAllRestaurants}) {
+//    const [allRestaurants, setAllRestaurants] = useState([])
    const [filterNeighborhood, setFilterNeighborhood] = useState("Neighborhood")
    const [filterCuisine, setFilterCuisine] = useState("Cuisine")
    const [sortBy, setSortBy] = useState('')
 
 
-  useEffect(() => {
-    fetch('http://localhost:3004/restaurants')
-      .then((response) => response.json())
-      .then((data) => setAllRestaurants(data));
-  }, [])
+//   useEffect(() => {
+//     fetch('http://localhost:3004/restaurants')
+//       .then((response) => response.json())
+//       .then((data) => setAllRestaurants(data));
+//   }, [])
+
+//   function newRestaurantFormSubmitClick(newRestaurant){
+//     setAllRestaurants([...allRestaurants, newRestaurant])
+//   }
 
 
   function handleNeighborhoodFilter(e){
