@@ -59,6 +59,16 @@
       "website": "https://www.midcitycinti.com/",
       "menu": "https://www.midcitycinti.com/menu",
       "visited": true
+    },
+    {
+      "name": "New Restaurant",
+      "neighborhood": "Covington, KY",
+      "cuisine": "Mediterranean",
+      "instagram": "instagram link",
+      "website": "website.com",
+      "menu": "menu.com",
+      "visited": "false",
+      "id": 7
     }
   ]
 }
