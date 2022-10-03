@@ -36,3 +36,17 @@ button:hover {
   margin: 1rem 2rem;
   box-shadow: 3px 4px #495C83;
 }
+
+.newRestaurantFormContainer {
+  text-align: center;
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

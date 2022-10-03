@@ -35,10 +35,10 @@ function handleFormSubmit(e){
       alert("Thanks for adding a new restaurant! Check it out at Our Spots.")
 }
     return(
-        <div>
+        <div className="newRestaurantFormContainer">
         <h1>New Restaurant Form</h1>
         <h3>Add a new restaurant to the list!</h3>
-            <form className="add-restaurant" onSubmit={handleFormSubmit}>
+            <form className="newRestaurantForm" onSubmit={handleFormSubmit}>
             <input
             type="text"
             name="name"
