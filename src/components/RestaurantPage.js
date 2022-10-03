@@ -31,6 +31,8 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
     )
   })
 
+
+
   return (
     <main>
        <h1>All of Our Restaurants</h1>
