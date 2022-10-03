@@ -32,7 +32,6 @@ function handleVisitedButtonClick(){
             <p><a href={restaurant.website}>Website</a></p>
             <p><a href={restaurant.menu}>Menu</a></p>
             <a href={restaurant.instagram}>📸</a><br/>
-            <strong>Have you been? </strong>
             {isVisited ? (
             <button onClick={handleVisitedButtonClick}>We've been to this spot!</button>
             ) : (

@@ -4,7 +4,7 @@ body {
 
 button {
   background: #5b3f74;
-  font-family: Courier New;
+  font-family: 'Montserrat';
   color: #ffffff;
   font-size: 1vw;
   padding: 1px 1px 1px 1px;
@@ -114,21 +114,12 @@ nav a.active {
   padding-right: 1rem;
 }
 
-/* .searchbar {
-  padding: 1rem;
-  display: block;
-  flex-direction: column;
-} */
-
-.Red {
-  background-image: url(./red.jpeg);
-}
-
 .homeImages {
-  height: 30rem;
+  height: 28rem;
   object-fit: cover;
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
   display: inline-grid;
 }
+
