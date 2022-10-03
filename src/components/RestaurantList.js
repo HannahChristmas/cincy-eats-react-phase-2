@@ -3,17 +3,16 @@ import RestaurantCard from "./RestaurantCard";
 
 function RestaurantList({allRestaurants, setAllRestaurants, filterNeighborhood, filterCuisine, filterVisited}){
 
-    const filteredByNeighborhood = allRestaurants.filter(restaurant => {
-        if((filterNeighborhood === "Neighborhood") || (filterNeighborhood === restaurant.neighborhood)) return true 
-        // if((filterCuisine === "Cuisine") || (filterCuisine === restaurant.cuisine)) return true
-    })
+    const filteredByAllCriteria = allRestaurants.filter(restaurant => {
+        console.log(typeof filterVisited)
+        if((filterNeighborhood === "Neighborhood" || restaurant.neighborhood === filterNeighborhood) 
+        && (filterCuisine === "Cuisine" || restaurant.cuisine === filterCuisine)
+        && (filterVisited === "Have you visited?" || restaurant.visited.toString() === filterVisited)) {
+                return true
+            }
+    }) 
 
-    // const filteredByCuisine = allRestaurants.filter(restaurant => {
-    //     if(filterCuisine === "Cuisine") return true
-    //     if(filterCuisine === restaurant.cuisine) return true 
-    // })
-
-    const restaurantsOnInitialRender = filteredByNeighborhood.map(restaurant => {
+    const restaurantsOnInitialRender = filteredByAllCriteria.map(restaurant => {
         return (
             <RestaurantCard key={restaurant.id} restaurant={restaurant} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
         )

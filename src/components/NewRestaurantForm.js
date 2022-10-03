@@ -59,6 +59,7 @@ function handleFormSubmit(e){
             <select onChange={(e) => setCuisine(e.target.value)}>
             < option value="Select Cusine">Select Cusine</option>
             < option value="American">American</option>
+            < option value="Chinese">Chinese</option>
             < option value="Japanese">Japanese</option>
             < option value="Mediterranean">Mediterranean</option>
             < option value="Small Plates">Small Plates</option>
@@ -91,8 +92,8 @@ function handleFormSubmit(e){
             <br />
             <select onChange={(e) => setVisited(e.target.value)}>
             < option value="Have you visited?">Have you visited?</option>
-            < option value="true">Yes</option>
-            < option value="false">Not yet</option>
+            < option value={true}>Yes</option>
+            < option value={false}>Not yet</option>
             </select>
             <br /><br />
             <input

@@ -12,13 +12,13 @@
     },
     {
       "id": 2,
-      "name": "Coppin's Restaurant & Bar",
+      "name": "Coppin's",
       "neighborhood": "Covington, KY",
       "cuisine": "American",
       "instagram": "https://www.instagram.com/coppinsrestaurant/",
       "website": "http://hotelcovington.com/dining/coppins/",
       "menu": "https://hotelcovington.com/wp-content/uploads/2022/09/Fall-Dinner-9.25.pdf",
-      "visited": false
+      "visited": true
     },
     {
       "id": 3,
@@ -28,10 +28,20 @@
       "instagram": "https://www.instagram.com/thehimark/",
       "website": "https://www.thehimark.com/",
       "menu": "https://www.thehimark.com/pdfs/current-menu-hi-mark.pdf",
-      "visited": false
+      "visited": true
     },
     {
       "id": 4,
+      "name": "Kung Food",
+      "neighborhood": "Covington, KY",
+      "cuisine": "Chinese",
+      "instagram": "https://www.instagram.com/kungfoodchu/?hl=en",
+      "website": "https://www.kungfood.online/",
+      "menu": "https://amerasia.carry-out.com/order.asp",
+      "visited": true
+    },
+    {
+      "id": 5,
       "name": "Mid City",
       "neighborhood": "CBD",
       "cuisine": "Small Plates",
@@ -41,44 +51,64 @@
       "visited": true
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Truva",
       "neighborhood": "Montgomery",
       "cuisine": "Mediterranean",
       "instagram": "https://www.truvaturkishkitchen.com/",
       "website": "https://www.truvaturkishkitchen.com/",
       "menu": "https://www.truvaturkishkitchen.com/our-menu/",
-      "visited": true
+      "visited": false
     },
     {
-      "id": 6,
-      "name": "Paper",
+      "name": "YouYu",
       "neighborhood": "CBD",
-      "cuisine": "Small Plates",
-      "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
-      "website": "https://www.midcitycinti.com/",
-      "menu": "https://www.midcitycinti.com/menu",
-      "visited": true
-    },
-    {
-      "name": "New Restaurant",
-      "neighborhood": "Covington, KY",
-      "cuisine": "Mediterranean",
-      "instagram": "instagram link",
-      "website": "website.com",
-      "menu": "menu.com",
-      "visited": "false",
+      "cuisine": "Japanese",
+      "instagram": "https://www.instagram.com/hardrock_cincinnati/",
+      "website": "https://www.hardrockcasinocincinnati.com/dining/youyu",
+      "menu": "https://www.hardrockcasinocincinnati.com/dining/youyu/youyu-menu",
+      "visited": false,
       "id": 7
     },
     {
       "name": "Another Resto",
       "neighborhood": "East Walnut Hills",
-      "cuisine": "Japanese",
+      "cuisine": "Mediterranean",
       "instagram": "insty boy",
       "website": "webby boy",
       "menu": "menny boy ",
-      "visited": "true",
+      "visited": false,
       "id": 8
+    },
+    {
+      "name": "Hannah Christmann",
+      "neighborhood": "Covington, KY",
+      "cuisine": "Japanese",
+      "instagram": "dafd",
+      "website": "'lkfs",
+      "menu": "dsaf",
+      "visited": false,
+      "id": 9
+    },
+    {
+      "name": "cdsad;salk f",
+      "neighborhood": "Montgomery",
+      "cuisine": "Chinese",
+      "instagram": "",
+      "website": "",
+      "menu": "",
+      "visited": true,
+      "id": 10
+    },
+    {
+      "name": "max",
+      "neighborhood": "Covington, KY",
+      "cuisine": "Small Plates",
+      "instagram": "mlkm",
+      "website": "stlish",
+      "menu": "noooo",
+      "visited": false,
+      "id": 11
     }
   ]
 }

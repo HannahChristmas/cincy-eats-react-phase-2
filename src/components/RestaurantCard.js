@@ -25,18 +25,18 @@ function handleVisitedButtonClick(){
 }
 
     return(
-        <div>
-            <h1>{restaurant.name}</h1>
+        <div className="card">
+            <h2>{restaurant.name}</h2>
             <h3>{restaurant.neighborhood}</h3>
             <h3>{restaurant.cuisine}</h3>
-            <ul><a href={restaurant.instagram}>Instagram</a></ul>
-            <ul><a href={restaurant.website}>Website</a></ul>
-            <ul><a href={restaurant.menu}>Menu</a></ul>
-            <strong>Have we been there? </strong>
+            <p><a href={restaurant.website}>Website</a></p>
+            <p><a href={restaurant.menu}>Menu</a></p>
+            <a href={restaurant.instagram}>📸</a><br/>
+            <strong>Have you been? </strong>
             {isVisited ? (
             <button onClick={handleVisitedButtonClick}>We've been to this spot!</button>
             ) : (
-            <button onClick={handleVisitedButtonClick}>It's still on the list!</button>    
+            <button className="isClicked"onClick={handleVisitedButtonClick}>It's still on the list!</button>    
             )}
         </div>
     )
