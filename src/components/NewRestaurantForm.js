@@ -39,6 +39,11 @@ function handleFormSubmit(e){
   const resetForm = () => {
     setName('')
     setNeighborhood('Select Neighborhood')
+    setCuisine('Select Cuisine')
+    setWebsite('')
+    setMenu('')
+    setInstagram('')
+    setVisited('Have you visited?')
   }
 
     return(
@@ -69,7 +74,10 @@ function handleFormSubmit(e){
             < option value="Other">Other</option>
             </select>
             <br />
-            <select onChange={(e) => setCuisine(e.target.value)}>
+            <select 
+              onChange={(e) => setCuisine(e.target.value)}
+              value={cuisine}
+              >
             < option value="Select Cusine">Select Cusine</option>
             < option value="American">American</option>
             < option value="Chinese">Chinese</option>
@@ -85,6 +93,7 @@ function handleFormSubmit(e){
             placeholder="Website"
             className="input-text"
             onChange={(e) => setWebsite(e.target.value)}
+            value={website}
             />
             <br />
             <input
@@ -93,6 +102,7 @@ function handleFormSubmit(e){
             placeholder="Menu"
             className="input-text"
             onChange={(e) => setMenu(e.target.value)}
+            value={menu}
             />
             <br />
             <input
@@ -101,9 +111,13 @@ function handleFormSubmit(e){
             placeholder="Instagram"
             className="input-text"
             onChange={(e) => setInstagram(e.target.value)}
+            value={instagram}
             />
             <br />
-            <select onChange={(e) => setVisited(e.target.value)}>
+            <select 
+              onChange={(e) => setVisited(e.target.value)}
+              value={visited}
+              >
             < option value="Have you visited?">Have you visited?</option>
             < option value={true}>Yes</option>
             < option value={false}>Not yet</option>
