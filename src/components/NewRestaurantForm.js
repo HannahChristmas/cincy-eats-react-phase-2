@@ -32,6 +32,7 @@ function handleFormSubmit(e){
         .then((data) => {
             newRestaurantFormSubmitClick(data);
       })
+      alert("Thanks for adding a new restaurant! Check it out at Our Spots.")
 }
     return(
         <div>
