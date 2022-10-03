@@ -3,7 +3,13 @@ import React from "react";
 function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisitedFilter}){
     return (
         <div>
-        <strong>Filter By: </strong>
+        <input
+            type="text"
+            id="search"
+            placeholder="Search for your favorite spot..."
+            className="search-input"
+        />
+        <strong className="strong"> Filter By: </strong>
         <select className={"dropdown-filter"} onChange={handleNeighborhoodFilter}>
             <option value="Neighborhood">Neighborhood</option>
             <option value="CBD">CBD</option>
