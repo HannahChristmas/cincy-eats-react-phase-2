@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
 import SearchBar from "./SearchBar";
@@ -30,16 +28,11 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
     )
   })
 
-
-
   return (
     <main>
        <h1>All of Our Restaurants</h1>
       <SearchBar handleNeighborhoodFilter={handleNeighborhoodFilter} handleCuisineFilter={handleCuisineFilter} handleVisitedFilter={handleVisitedFilter} setSearch={setSearch}/>  
       <RestaurantList filterNeighborhood={filterNeighborhood} filterCuisine={filterCuisine} filterVisited={filterVisited} allRestaurants={restaurantSearchList} setAllRestaurants={setAllRestaurants}/>
-      
-      {/* <Search />
-      <Filter /> */}
     </main>
   );
 }

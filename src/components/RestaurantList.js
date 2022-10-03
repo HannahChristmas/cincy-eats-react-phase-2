@@ -4,7 +4,6 @@ import RestaurantCard from "./RestaurantCard";
 function RestaurantList({allRestaurants, setAllRestaurants, filterNeighborhood, filterCuisine, filterVisited}){
 
     const filteredByAllCriteria = allRestaurants.filter(restaurant => {
-        console.log(typeof filterVisited)
         if((filterNeighborhood === "Neighborhood" || restaurant.neighborhood === filterNeighborhood) 
         && (filterCuisine === "Cuisine" || restaurant.cuisine === filterCuisine)
         && (filterVisited === "Have you visited?" || restaurant.visited.toString() === filterVisited)) {

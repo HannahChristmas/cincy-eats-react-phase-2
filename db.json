@@ -1,64 +1,64 @@
 {
   "restaurants": [
     {
-      "id": 1,
       "name": "Cafe Mochiko",
       "neighborhood": "East Walnut Hills",
       "cuisine": "Japanese",
       "instagram": "https://www.instagram.com/mochikocincy/",
       "website": "https://www.cafemochiko.com/",
       "menu": "https://www.cafemochiko.com/menus",
-      "visited": true
+      "visited": true,
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Coppin's",
       "neighborhood": "Covington, KY",
       "cuisine": "American",
       "instagram": "https://www.instagram.com/coppinsrestaurant/",
       "website": "http://hotelcovington.com/dining/coppins/",
       "menu": "https://hotelcovington.com/wp-content/uploads/2022/09/Fall-Dinner-9.25.pdf",
-      "visited": true
+      "visited": true,
+      "id": 2
     },
     {
-      "id": 3,
       "name": "Hi Mark",
       "neighborhood": "East End",
       "cuisine": "American",
       "instagram": "https://www.instagram.com/thehimark/",
       "website": "https://www.thehimark.com/",
       "menu": "https://www.thehimark.com/pdfs/current-menu-hi-mark.pdf",
-      "visited": true
+      "visited": true,
+      "id": 3
     },
     {
-      "id": 4,
       "name": "Kung Food",
       "neighborhood": "Covington, KY",
       "cuisine": "Chinese",
       "instagram": "https://www.instagram.com/kungfoodchu/?hl=en",
       "website": "https://www.kungfood.online/",
       "menu": "https://amerasia.carry-out.com/order.asp",
-      "visited": true
+      "visited": true,
+      "id": 4
     },
     {
-      "id": 5,
       "name": "Mid City",
       "neighborhood": "CBD",
       "cuisine": "Small Plates",
       "instagram": "https://www.instagram.com/midcitycinti/?hl=en",
       "website": "https://www.midcitycinti.com/",
       "menu": "https://www.midcitycinti.com/menu",
-      "visited": true
+      "visited": true,
+      "id": 5
     },
     {
-      "id": 6,
       "name": "Truva",
       "neighborhood": "Montgomery",
       "cuisine": "Mediterranean",
       "instagram": "https://www.truvaturkishkitchen.com/",
       "website": "https://www.truvaturkishkitchen.com/",
       "menu": "https://www.truvaturkishkitchen.com/our-menu/",
-      "visited": false
+      "visited": false,
+      "id": 6
     },
     {
       "name": "The Precinct",
@@ -119,6 +119,16 @@
       "menu": "http://zundootr.com/",
       "visited": false,
       "id": 12
+    },
+    {
+      "name": "Mighty Good OTR",
+      "neighborhood": "OTR",
+      "cuisine": "American",
+      "instagram": "https://www.instagram.com/mightygoodotr/",
+      "website": "https://www.mightygoodotr.com/",
+      "menu": "https://www.mightygoodotr.com/menu",
+      "visited": false,
+      "id": 13
     }
   ]
 }

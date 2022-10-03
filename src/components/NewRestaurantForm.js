@@ -33,7 +33,14 @@ function handleFormSubmit(e){
             newRestaurantFormSubmitClick(data);
       })
       alert("Thanks for adding a new restaurant! Check it out at Our Spots.")
+      resetForm()
 }
+
+  const resetForm = () => {
+    setName('')
+    setNeighborhood('Select Neighborhood')
+  }
+
     return(
         <div className="newRestaurantFormContainer">
         <h1>New Restaurant Form</h1>
@@ -44,10 +51,14 @@ function handleFormSubmit(e){
             name="name"
             placeholder="Restaurant name"
             className="input-text"
+            value={name}
             onChange={(e) => setName(e.target.value)}
             />
             <br />
-            <select onChange={(e) => setNeighborhood(e.target.value)}>
+            <select 
+              onChange={(e) => setNeighborhood(e.target.value)}
+              value={neighborhood}
+              >
             < option value="Select Neighborhood">Select Neighborhood</option>
             < option value="CBD">CBD</option>
             < option value="Covington, KY">Covington, KY</option>

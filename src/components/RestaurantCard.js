@@ -20,7 +20,6 @@ function handleVisitedButtonClick(){
             console.log(updatedRestaurant)
           const patchedRestaurants = allRestaurants.map(unchangedRestaurantFromMap => unchangedRestaurantFromMap.id === restaurant.id ? updatedRestaurant : unchangedRestaurantFromMap);
           setAllRestaurants(patchedRestaurants)
-          console.log ("After set state:", patchedRestaurants)
       })
 }
 
@@ -28,14 +27,14 @@ function handleVisitedButtonClick(){
         <div className="card">
             <h2>{restaurant.name}</h2>
             <h3>{restaurant.neighborhood}</h3>
-            <h3>{restaurant.cuisine}</h3>
+            <h4>{restaurant.cuisine}</h4>
             <p><a href={restaurant.website}>Website</a></p>
             <p><a href={restaurant.menu}>Menu</a></p>
             <a href={restaurant.instagram}>📸</a><br/>
             {isVisited ? (
             <button onClick={handleVisitedButtonClick}>We've been to this spot!</button>
             ) : (
-            <button className="isClicked"onClick={handleVisitedButtonClick}>It's still on the list!</button>    
+            <button className="isClicked" onClick={handleVisitedButtonClick}>It's still on the list!</button>    
             )}
         </div>
     )
