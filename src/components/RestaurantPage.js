@@ -1,8 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import RestaurantList from "./RestaurantList";
-import NewRestaurantForm from "./NewRestaurantForm";
 import SearchBar from "./SearchBar";
 
 

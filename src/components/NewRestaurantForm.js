@@ -54,6 +54,7 @@ function handleFormSubmit(e){
             < option value="East End">East End</option>
             < option value="East Walnut Hills">East Walnut Hills</option>
             < option value="Montgomery">Montgomery</option>
+            < option value="OTR">OTR</option>
             < option value="Other">Other</option>
             </select>
             <br />

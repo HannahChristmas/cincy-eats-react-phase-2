@@ -19,6 +19,8 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
             <option value="East End">East End</option>
             <option value="East Walnut Hills">East Walnut Hills</option>
             <option value="Montgomery">Montgomery</option>
+            <option value="OTR">OTR</option>
+
         </select>
         <select className={"dropdown-filter"} onChange={handleCuisineFilter}>
             <option value="Cuisine">Cuisine</option>

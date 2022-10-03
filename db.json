@@ -61,94 +61,64 @@
       "visited": false
     },
     {
+      "name": "The Precinct",
+      "neighborhood": "East End",
+      "cuisine": "American",
+      "instagram": "https://www.instagram.com/jeffrubyculinary/",
+      "website": "https://www.jeffruby.com/precinct",
+      "menu": "https://www.jeffruby.com/precinct/menus",
+      "visited": false,
+      "id": 7
+    },
+    {
+      "name": "Hoppin' Vines",
+      "neighborhood": "Montgomery",
+      "cuisine": "American",
+      "instagram": "https://www.instagram.com/hoppinvines/",
+      "website": "https://www.hoppinvines.com/",
+      "menu": "https://www.hoppinvines.com/delicio-s-pizza",
+      "visited": false,
+      "id": 8
+    },
+    {
       "name": "YouYu",
       "neighborhood": "CBD",
       "cuisine": "Japanese",
       "instagram": "https://www.instagram.com/hardrock_cincinnati/",
       "website": "https://www.hardrockcasinocincinnati.com/dining/youyu",
       "menu": "https://www.hardrockcasinocincinnati.com/dining/youyu/youyu-menu",
-      "visited": false,
-      "id": 7
-    },
-    {
-      "name": "Another Resto",
-      "neighborhood": "East Walnut Hills",
-      "cuisine": "Mediterranean",
-      "instagram": "insty boy",
-      "website": "webby boy",
-      "menu": "menny boy ",
-      "visited": false,
-      "id": 8
-    },
-    {
-      "name": "Hannah Christmann",
-      "neighborhood": "Covington, KY",
-      "cuisine": "Japanese",
-      "instagram": "dafd",
-      "website": "'lkfs",
-      "menu": "dsaf",
-      "visited": false,
+      "visited": true,
       "id": 9
     },
     {
-      "name": "cdsad;salk f",
-      "neighborhood": "Montgomery",
-      "cuisine": "Chinese",
-      "instagram": "",
-      "website": "",
-      "menu": "",
-      "visited": true,
+      "name": "HeyDay",
+      "neighborhood": "East Walnut Hills",
+      "cuisine": "American",
+      "instagram": "https://www.instagram.com/heyday.cincy/?hl=en",
+      "website": "https://www.heyday.menu/",
+      "menu": "https://www.heyday.menu/",
+      "visited": false,
       "id": 10
     },
     {
-      "name": "max",
-      "neighborhood": "Covington, KY",
-      "cuisine": "Small Plates",
-      "instagram": "mlkm",
-      "website": "stlish",
-      "menu": "noooo",
-      "visited": false,
+      "name": "Abigail Street",
+      "neighborhood": "OTR",
+      "cuisine": "Mediterranean",
+      "instagram": "https://www.instagram.com/abigailwinebar/",
+      "website": "http://abigailstreet.com/",
+      "menu": "http://abigailstreet.com/food/",
+      "visited": true,
       "id": 11
     },
     {
-      "name": "Something",
-      "neighborhood": "East Walnut Hills",
-      "cuisine": "American",
-      "instagram": "dfasdd",
-      "website": "safd",
-      "menu": "dafsf",
-      "visited": "true",
+      "name": "Zundo",
+      "neighborhood": "OTR",
+      "cuisine": "Japanese",
+      "instagram": "https://www.instagram.com/zundoramen/?hl=en",
+      "website": "http://zundootr.com/",
+      "menu": "http://zundootr.com/",
+      "visited": false,
       "id": 12
-    },
-    {
-      "name": "afdsfdas",
-      "neighborhood": "Select Neighborhood",
-      "cuisine": "Select Cusine",
-      "instagram": "sadf",
-      "website": "fdsaf",
-      "menu": "asdfassadf",
-      "visited": "",
-      "id": 13
-    },
-    {
-      "name": "adsfads",
-      "neighborhood": "East End",
-      "cuisine": "Japanese",
-      "instagram": "adsfsda",
-      "website": "dsafds",
-      "menu": "adsfd",
-      "visited": "false",
-      "id": 14
-    },
-    {
-      "name": "adsfads",
-      "neighborhood": "East End",
-      "cuisine": "Japanese",
-      "instagram": "adsfsda",
-      "website": "dsafds",
-      "menu": "adsfd",
-      "visited": "false",
-      "id": 15
     }
   ]
 }
