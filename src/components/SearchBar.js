@@ -4,7 +4,7 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
     return (
         <div>
         <strong>Filter By: </strong>
-        <select onChange={handleNeighborhoodFilter}>
+        <select className={"dropdown-filter"} onChange={handleNeighborhoodFilter}>
             <option value="Neighborhood">Neighborhood</option>
             <option value="CBD">CBD</option>
             <option value="Covington, KY">Covington, KY</option>
@@ -12,7 +12,7 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
             <option value="East Walnut Hills">East Walnut Hills</option>
             <option value="Montgomery">Montgomery</option>
         </select>
-        <select onChange={handleCuisineFilter}>
+        <select className={"dropdown-filter"} onChange={handleCuisineFilter}>
             <option value="Cuisine">Cuisine</option>
             <option value="American">American</option>
             <option value="Chinese">Chinese</option>        
@@ -20,7 +20,7 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
             <option value="Mediterranean">Mediterranean</option>
             <option value="Small Plates">Small Plates</option>
         </select>
-        <select onChange={handleVisitedFilter}>
+        <select className={"dropdown-filter"} onChange={handleVisitedFilter}>
             <option value="Have you visited?">Have you visited?</option>
             <option value={true}>Yes!</option>
             <option value={false}>It's still on the list!</option>

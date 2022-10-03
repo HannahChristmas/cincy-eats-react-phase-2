@@ -38,7 +38,7 @@ function handleFormSubmit(e){
         <div className="newRestaurantFormContainer">
         <h1>New Restaurant Form</h1>
         <h3>Add a new restaurant to the list!</h3>
-            <form className="newRestaurantForm" onSubmit={handleFormSubmit}>
+            <form className="newForm" onSubmit={handleFormSubmit}>
             <input
             type="text"
             name="name"
