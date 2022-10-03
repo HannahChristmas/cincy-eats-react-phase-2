@@ -119,3 +119,16 @@ nav a.active {
   display: block;
   flex-direction: column;
 } */
+
+.Red {
+  background-image: url(./red.jpeg);
+}
+
+.homeImages {
+  float: left;
+  width:  200px;
+  height: 300px;
+  object-fit: cover;
+  padding-bottom: 15px;
+  display: inline-grid;
+}
