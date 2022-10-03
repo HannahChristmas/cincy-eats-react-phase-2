@@ -10,6 +10,7 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
    const [filterNeighborhood, setFilterNeighborhood] = useState("Neighborhood")
    const [filterCuisine, setFilterCuisine] = useState("Cuisine")
    const [filterVisited, setFilterVisited] = useState("Have you visited?")
+   const [search, setSearch] = useState("")
 
 
   function handleNeighborhoodFilter(e){
@@ -24,11 +25,17 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
     setFilterVisited(e.target.value)
   }
 
+  const restaurantSearchList = allRestaurants.filter(restaurant => {
+    return (
+      restaurant.name.toLowerCase().includes((search).toLowerCase())
+    )
+  })
+
   return (
     <main>
        <h1>All of Our Restaurants</h1>
-      <SearchBar handleNeighborhoodFilter={handleNeighborhoodFilter} handleCuisineFilter={handleCuisineFilter} handleVisitedFilter={handleVisitedFilter}/>  
-      <RestaurantList filterNeighborhood={filterNeighborhood} filterCuisine={filterCuisine} filterVisited={filterVisited} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
+      <SearchBar handleNeighborhoodFilter={handleNeighborhoodFilter} handleCuisineFilter={handleCuisineFilter} handleVisitedFilter={handleVisitedFilter} setSearch={setSearch}/>  
+      <RestaurantList filterNeighborhood={filterNeighborhood} filterCuisine={filterCuisine} filterVisited={filterVisited} allRestaurants={restaurantSearchList} setAllRestaurants={setAllRestaurants}/>
       
       {/* <Search />
       <Filter /> */}

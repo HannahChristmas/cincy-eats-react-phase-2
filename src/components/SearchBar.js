@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisitedFilter}){
+function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisitedFilter, setSearch}){
     return (
         <div>
         <input
@@ -8,6 +8,8 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
             id="search"
             placeholder="Search for your favorite spot..."
             className="search-input"
+            onChange={(e) => setSearch(e.target.value)}
+            
         />
         <strong className="strong"> Filter By: </strong>
         <select className={"dropdown-filter"} onChange={handleNeighborhoodFilter}>
