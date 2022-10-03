@@ -125,10 +125,10 @@ nav a.active {
 }
 
 .homeImages {
-  float: left;
-  width:  200px;
-  height: 300px;
+  height: 30rem;
   object-fit: cover;
   padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: inline-grid;
 }

@@ -3,6 +3,9 @@ import red from '../red.jpeg'
 import pastry from "../pastry.jpeg"
 import egg from "../egg.jpeg"
 import taco from "../taco.jpeg"
+import pavlova from "../pavlova.jpeg"
+import empanada from "../empanada.jpeg"
+
 
 
 function Home() {
@@ -13,8 +16,11 @@ function Home() {
         {/* <img src="https://img.theculturetrip.com/768x/smart/wp-content/uploads/2018/03/2007325.jpg"/> */}
         <img class="homeImages"src={red}/>
         <img class="homeImages"src={pastry}/>
-        <img class="homeImages"src={egg}/>
         <img class="homeImages"src={taco}/>
+        <img class="homeImages"src={egg}/>
+        <img class="homeImages"src={pavlova}/>
+        <img class="homeImages"src={empanada}/>
+
     </div>
 }
 
