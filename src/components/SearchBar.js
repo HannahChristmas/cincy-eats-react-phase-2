@@ -5,11 +5,10 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
         <div>
         <input
             type="text"
-            id="search"
+            id="search" 
             placeholder="Search for your favorite spot..."
             className="search-input"
             onChange={(e) => setSearch(e.target.value)}
-            
         />
         <strong className="strong"> Filter By: </strong>
         <select className={"dropdown-filter"} onChange={handleNeighborhoodFilter}>
@@ -20,8 +19,8 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
             <option value="East Walnut Hills">East Walnut Hills</option>
             <option value="Montgomery">Montgomery</option>
             <option value="OTR">OTR</option>
-
         </select>
+        
         <select className={"dropdown-filter"} onChange={handleCuisineFilter}>
             <option value="Cuisine">Cuisine</option>
             <option value="American">American</option>

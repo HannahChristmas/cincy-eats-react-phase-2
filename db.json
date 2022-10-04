@@ -107,7 +107,7 @@
       "instagram": "https://www.instagram.com/abigailwinebar/",
       "website": "http://abigailstreet.com/",
       "menu": "http://abigailstreet.com/food/",
-      "visited": true,
+      "visited": false,
       "id": 11
     },
     {
@@ -129,6 +129,16 @@
       "menu": "https://www.mightygoodotr.com/menu",
       "visited": false,
       "id": 13
+    },
+    {
+      "name": "New Spot",
+      "neighborhood": "East End",
+      "cuisine": "Mediterranean",
+      "instagram": "instagram",
+      "website": "website",
+      "menu": "menu",
+      "visited": "true",
+      "id": 14
     }
   ]
 }

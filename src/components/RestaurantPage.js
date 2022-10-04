@@ -9,7 +9,6 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
    const [filterVisited, setFilterVisited] = useState("Have you visited?")
    const [search, setSearch] = useState("")
 
-
   function handleNeighborhoodFilter(e){
     setFilterNeighborhood(e.target.value)
   }

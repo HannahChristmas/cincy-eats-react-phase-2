@@ -18,6 +18,9 @@ function App() {
       });
   }, [])
 
+  //it triggers when the component is mounted- when the component renders to the DOM. Triggers a side mission
+  //the [] is the dependencies array. If this changes, the useEffect will run. If empty, only runs once on initial rendering of the component to the DOM.
+
   function newRestaurantFormSubmitClick(newRestaurant){
     setAllRestaurants([...allRestaurants, newRestaurant])
   }
@@ -34,21 +37,23 @@ function App() {
       }
       return 0;
     });
-
   }
 
   return (
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
         <Route path="/restaurants">
           <RestaurantPage allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
         </Route>
         <Route path="/add">
           <NewRestaurantForm newRestaurantFormSubmitClick={newRestaurantFormSubmitClick}/>
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="*">
+          <h1>error: suppy go away</h1>
         </Route>
       </Switch>
     </div>
