@@ -1,12 +1,10 @@
 import React from "react";
-import red from '../red.jpeg'
-import pastry from "../pastry.jpeg"
-import egg from "../egg.jpeg"
-import taco from "../taco.jpeg"
-import pavlova from "../pavlova.jpeg"
-import empanada from "../empanada.jpeg"
-
-
+import red from '../Photos/red.jpeg'
+import pastry from "../Photos/pastry.jpeg"
+import egg from "../Photos/egg.jpeg"
+import taco from "../Photos/taco.jpeg"
+import pavlova from "../Photos/pavlova.jpeg"
+import empanada from "../Photos/empanada.jpeg"
 
 function Home() {
 

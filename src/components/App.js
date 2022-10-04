@@ -5,7 +5,6 @@ import Home from "./Home";
 import NewRestaurantForm from "./NewRestaurantForm";
 import RestaurantPage from "./RestaurantPage"
 
-
 function App() {
   const [allRestaurants, setAllRestaurants] = useState([])
 
@@ -17,15 +16,9 @@ function App() {
         setAllRestaurants(sortedRestaraunts)
       });
   }, [])
-
-  //it triggers when the component is mounted- when the component renders to the DOM. Triggers a side mission
-  //the [] is the dependencies array. If this changes, the useEffect will run. If empty, only runs once on initial rendering of the component to the DOM.
-
-  function newRestaurantFormSubmitClick(newRestaurant){
-    setAllRestaurants([...allRestaurants, newRestaurant])
-  }
-
+  
   const sortByName = (apiData) => {
+    console.log(apiData)
     return [...apiData].sort((a, b) => {
       const nameA = a.name.toUpperCase(); 
       const nameB = b.name.toUpperCase(); 
@@ -37,6 +30,10 @@ function App() {
       }
       return 0;
     });
+  }
+
+  function newRestaurantFormSubmitClick(newRestaurant){
+    setAllRestaurants([...allRestaurants, newRestaurant])
   }
 
   return (
@@ -53,7 +50,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="*">
-          <h1>error: suppy go away</h1>
+          <h1>error: Nothing to eat here! Try another page.</h1>
         </Route>
       </Switch>
     </div>

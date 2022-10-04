@@ -119,8 +119,8 @@ function handleFormSubmit(e){
               value={visited}
               >
             < option value="Have you visited?">Have you visited?</option>
-            < option value={true}>Yes</option>
-            < option value={false}>Not yet</option>
+            < option value="true">Yes</option>
+            < option value="false">Not yet</option>
             </select>
             <br /><br />
             <input

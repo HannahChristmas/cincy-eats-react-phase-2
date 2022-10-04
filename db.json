@@ -131,13 +131,13 @@
       "id": 13
     },
     {
-      "name": "New Spot",
-      "neighborhood": "East End",
+      "name": "Hannah",
+      "neighborhood": "Covington, KY",
       "cuisine": "Mediterranean",
       "instagram": "instagram",
       "website": "website",
       "menu": "menu",
-      "visited": "true",
+      "visited": true,
       "id": 14
     }
   ]

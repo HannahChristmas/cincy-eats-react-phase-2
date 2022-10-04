@@ -1,6 +1,6 @@
 import React from "react";
 
-function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisitedFilter, setSearch}){
+function FilterBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisitedFilter, setSearch}){
     return (
         <div>
         <input
@@ -38,4 +38,4 @@ function SearchBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisited
     )
 }
 
-export default SearchBar;
+export default FilterBar;
