@@ -2,7 +2,7 @@ import React from "react";
 
 function FilterBar({handleNeighborhoodFilter, handleCuisineFilter, handleVisitedFilter, setSearch}){
     return (
-        <div>
+        <div> 
         <input
             type="text"
             id="search" 

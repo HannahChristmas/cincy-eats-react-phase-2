@@ -1,37 +1,29 @@
-# Phase 2 Final Project- Cincy Eats Restaurant Passport
+## Cincy Eats Restaurant Passport
 
-## Overview
+## Description
 
 This application allows users to view, add, and check off restaurants in Cincinnati. Users can filter through existing restaurants or add a restaurant of their own. Restaurants can also be marked as "visited" or "still on the list."
 
-## Installation Instructions
-* Fork and clone on github
-* Run npm install
-* Run npm run server. This will run your backend on port 3004.
-* Run npm start
+[Video Demo](https://youtu.be/eth0QJixxKw)
 
-## Usage
-* Navigation bar that allows user to toggle among Home, Our Spots, and Add A Spot
-* Search restaurants by name
-* Filter restaurants by neighborhood, cuisine, whether the restaurant has been visited, or all of the above
-* Click the visited button to display whether the restaurant has been visited- change persists on the backend
-* Add new restaurant to the DOM and to the backend at Add A Spot.
+## Built with 
+- React.js
 
-## Contributing
-I am not open to contributions at this time. 
+## Setup
+- Fork and clone on github
+- Run npm install
+- Run npm run server. This will run your backend on port 3004.
+- Run npm start
 
-## Blog Link
-My blog post about event listeners can be found [here.](https://medium.com/@hc109909/controlled-forms-in-react-eb5e6df85c89)
+## About
+- Navigation bar that allows user to toggle among Home, Our Spots, and Add A Spot
+- Search restaurants by name
+- Filter restaurants by neighborhood, cuisine, whether the restaurant has been visited, or all of the above
+- Click the visited button to display whether the restaurant has been visited- change persists on the backend
+- Add new restaurant to the DOM and to the backend at Add A Spot.
 
-## Video Link
-My Youtube video about this project can be found [here.](https://youtu.be/eth0QJixxKw)
-
-## Resources
-* [CSS Form Styling](w3schools.com/css/css_form.asp) 
-
-## License
-* [MIT](https://choosealicense.com/licenses/mit/)
-
+## Contact
+Hannah Christmann · [Email](mailto:hc109909@gmail.com) · [LinkedIn](https://www.linkedin.com/in/hannah-e-christmann/) · [Blog](https://medium.com/@hc109909) · [Video Demo](https://youtu.be/eth0QJixxKw)
 
 
 <!-- ### `npm test`

@@ -18,7 +18,6 @@ function App() {
   }, [])
   
   const sortByName = (apiData) => {
-    console.log(apiData)
     return [...apiData].sort((a, b) => {
       const nameA = a.name.toUpperCase(); 
       const nameB = b.name.toUpperCase(); 
@@ -50,7 +49,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="*">
-          <h1>error: Nothing to eat here! Try another page.</h1>
+          <h1>error 404: Nothing to eat here! Try another page.</h1>
         </Route>
       </Switch>
     </div>

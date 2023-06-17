@@ -97,11 +97,6 @@ nav a:active {
   border-bottom: 2px solid #5b3f74;;
 }
 
-nav a.active {
-  color: #5b3f74;
-  border-bottom: 2px solid #5b3f74;;
-}
-
 .search-input {
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import RestaurantList from "./RestaurantList";
 import FilterBar from "./FilterBar";
 import RestaurantCard from "./RestaurantCard";
 
@@ -11,7 +10,7 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
 
   function handleNeighborhoodFilter(e){
     setFilterNeighborhood(e.target.value)
-  }
+  } 
 
   function handleCuisineFilter(e){
     setFilterCuisine(e.target.value)
@@ -25,7 +24,7 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
     return (
       restaurant.name.toLowerCase().includes((search).toLowerCase())
     )
-  })
+  }) 
 
   const filteredByAllCriteria = restaurantSearchList.filter(restaurant => {
     if((filterNeighborhood === "Neighborhood" || restaurant.neighborhood === filterNeighborhood) 
@@ -39,13 +38,12 @@ function RestaurantPage({allRestaurants, setAllRestaurants}) {
     return (
         <RestaurantCard key={restaurant.id} restaurant={restaurant} allRestaurants={allRestaurants} setAllRestaurants={setAllRestaurants}/>
     )      
-}) 
+  }) 
 
   return (
     <main>
        <h1>All of Our Restaurants</h1>
       <FilterBar handleNeighborhoodFilter={handleNeighborhoodFilter} handleCuisineFilter={handleCuisineFilter} handleVisitedFilter={handleVisitedFilter} setSearch={setSearch}/>  
-      {/* <RestaurantList filterNeighborhood={filterNeighborhood} filterCuisine={filterCuisine} filterVisited={filterVisited} allRestaurants={restaurantSearchList} setAllRestaurants={setAllRestaurants}/> */}
       <div>
       {restaurantsOnInitialRender}
       </div>

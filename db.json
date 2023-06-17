@@ -107,7 +107,7 @@
       "instagram": "https://www.instagram.com/abigailwinebar/",
       "website": "http://abigailstreet.com/",
       "menu": "http://abigailstreet.com/food/",
-      "visited": false,
+      "visited": true,
       "id": 11
     },
     {
@@ -133,9 +133,9 @@
     {
       "name": "Hannah",
       "neighborhood": "Covington, KY",
-      "cuisine": "Mediterranean",
-      "instagram": "instagram",
-      "website": "website",
+      "cuisine": "Japanese",
+      "instagram": "insta",
+      "website": "web",
       "menu": "menu",
       "visited": true,
       "id": 14

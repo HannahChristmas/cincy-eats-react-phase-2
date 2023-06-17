@@ -11,6 +11,9 @@ const [visited, setVisited] = useState('')
 
 function handleFormSubmit(e){
     e.preventDefault()
+    // if visited is equal to the string "true", return true. Else, return false.
+    const visitedBoolean = visited === 'true'
+
     const newRestaurantFromForm =   {
         "name": name,
         "neighborhood": neighborhood,
@@ -18,9 +21,9 @@ function handleFormSubmit(e){
         "instagram": instagram,
         "website": website,
         "menu": menu,
-        "visited": visited
+        "visited": visitedBoolean
       }
-      console.log("New Restaurant", newRestaurantFromForm)
+      
       fetch('http://localhost:3004/restaurants', {
         method: 'POST',
         headers: {
@@ -119,8 +122,8 @@ function handleFormSubmit(e){
               value={visited}
               >
             < option value="Have you visited?">Have you visited?</option>
-            < option value="true">Yes</option>
-            < option value="false">Not yet</option>
+            < option value={true}>Yes</option>
+            < option value={false}>Not yet</option>
             </select>
             <br /><br />
             <input
